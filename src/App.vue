@@ -10,7 +10,7 @@
       <v-row>
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex"
+            class="mb-3 d-flex flex-column justify-start"
             style="height: 300px; width: 100%; margin-top: 20px;"
           >
             <v-card-title>About Me</v-card-title>
@@ -37,7 +37,7 @@
 
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex"
+            class="mb-3 d-flex flex-column justify-start"
             style="height: 300px; width: 100%; margin-top: 20px;"
           >
             <v-card-title>My Education</v-card-title>
@@ -49,7 +49,7 @@
       <v-row>
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex"
+            class="mb-3 d-flex flex-column justify-start"
             style="height: 300px; width: 100%;"
           >
             <v-card-title>My Experience</v-card-title>
@@ -59,7 +59,7 @@
 
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex"
+            class="mb-3 d-flex flex-column justify-start"
             style="height: 300px; width: 100%;"
           >
             <v-card-title>Side Activities</v-card-title>
@@ -69,7 +69,7 @@
 
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex"
+            class="mb-3 d-flex flex-column justify-start"
             style="height: 300px; width: 100%;"
           >
             <v-card-title>Projects</v-card-title>
