@@ -6,19 +6,77 @@
           Hi! I am Prakanksha and this is all me.
         </div>
       </div>
-      <v-card 
-        max-width="300"  
-        square 
-        class="mx-auto pa-2 pt-3 pb-4 d-flex"
-        style="position: relative; margin-top: 20px;"
-      >
-        <v-img
-          :src="screenshot"
-          alt="Screenshot"
-          aspect-ratio="1"
-          class="pa-2"
-        ></v-img>
-      </v-card>
+
+      <v-row>
+        <v-col cols="4">
+          <v-card 
+            class="mb-3 d-flex"
+            style="height: 300px; width: 100%; margin-top: 20px;"
+          >
+            <v-card-title>About Me</v-card-title>
+            <v-card-text>This is some random text inside a box.</v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="4">
+          <v-card 
+            max-width="100%"  
+            square 
+            class="mx-auto pa-2 pt-3 pb-4 d-flex"
+            style="height: 300px; position: relative; margin-top: 20px;"
+          >
+            <v-img
+              :src="screenshot"
+              alt="Screenshot"
+              aspect-ratio="1"
+              class="pa-2"
+              style="height: 100%; width: 100%;"
+            ></v-img>
+          </v-card>
+        </v-col>
+
+        <v-col cols="4">
+          <v-card 
+            class="mb-3 d-flex"
+            style="height: 300px; width: 100%; margin-top: 20px;"
+          >
+            <v-card-title>My Education</v-card-title>
+            <v-card-text>This is the fourth random text box.</v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col cols="4">
+          <v-card 
+            class="mb-3 d-flex"
+            style="height: 300px; width: 100%;"
+          >
+            <v-card-title>My Experience</v-card-title>
+            <v-card-text>Here is another box with random text.</v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="4">
+          <v-card 
+            class="mb-3 d-flex"
+            style="height: 300px; width: 100%;"
+          >
+            <v-card-title>Side Activities</v-card-title>
+            <v-card-text>This box is placed below the image.</v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="4">
+          <v-card 
+            class="mb-3 d-flex"
+            style="height: 300px; width: 100%;"
+          >
+            <v-card-title>Projects</v-card-title>
+            <v-card-text>Another box with some random text.</v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>
     
     <v-spacer></v-spacer>
@@ -37,13 +95,11 @@
 
 <script>
 import screenshotImage from '@/assets/Screenshot.jpg';
-import Vine from '@/assets/Vine.jpg';
 
 export default {
   data() {
     return {
       screenshot: screenshotImage,
-      Vine : Vine
     };
   },
   methods: {
