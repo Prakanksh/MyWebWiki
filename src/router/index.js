@@ -14,6 +14,11 @@ const router = createRouter({
       component: () => import('../views/Edu.vue') 
     },
     {
+      path: '/exp',
+      name: 'exp',
+      component: () => import('../views/Exp.vue') 
+    },
+    {
       path: '/settings/folders',
       name: 'settings-folders',
       component: () => import('../views/settings/Folders.vue')

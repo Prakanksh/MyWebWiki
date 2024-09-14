@@ -59,10 +59,12 @@
         <v-col cols="4">
           <v-card 
             class="mb-3 d-flex flex-column justify-start rounded-lg"
-            style="height: 300px; width: 100%;"
+            style="height: 300px; width: 100%;" 
+            to="/exp" 
           >
             <v-card-title>My Experience</v-card-title>
-            <v-card-text>Here is another box with random text.</v-card-text>
+            <v-card-text>
+              I have 2.5 years of experience in software development, working with Vue.js, Node.js, Angular, and Ionic to build fintech web and mobile apps. I’ve integrated tools like ApexCharts for data visualization, developed backend APIs, and managed databases with SQL and MongoDB. Recently, I’ve begun learning Google Cloud Platform to expand my skills further.</v-card-text>
           </v-card>
         </v-col>
 
