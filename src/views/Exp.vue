@@ -6,6 +6,9 @@
             My Experience
           </div>
         </div>
+        <div class="text-center pt-3">
+        <v-divider></v-divider>
+      </div>
   
         <!-- Updated v-card with new experience paragraphs -->
         <v-card class="pa-4 mt-10 mb-5">

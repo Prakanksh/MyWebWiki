@@ -6,6 +6,9 @@
             My Education
           </div>
         </div>
+        <div class="text-center pt-3">
+        <v-divider></v-divider>
+      </div>
   
         <v-card class="pa-4 mt-10 mb-5">
           <v-card-text>

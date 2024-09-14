@@ -2,13 +2,14 @@
   <v-app style="background-color: #FCE4EC; min-height: 100vh; display: flex; flex-direction: column;">
     <v-container>
       <div class="text-center">
-        <div class="text-h4 mb-n3" style="font-family: 'Pacifico', cursive; color: black;">
+        <div class="text-h5 mb-n3" style="font-family: 'Pacifico', cursive; color: black;">
           Hi! I am Prakanksha and this is all me.
         </div>
       </div>
-      <v-spacer></v-spacer>
-      <v-divider></v-divider>
-
+      <div class="text-center pt-3">
+        <v-divider></v-divider>
+      </div>
+      
       <v-row>
         <v-col v-if="showAboutCard" cols="4">
           <v-card transition="fade-transition"
