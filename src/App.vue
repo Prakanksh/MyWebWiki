@@ -2,14 +2,16 @@
   <v-app style="background-color: #FCE4EC; min-height: 100vh; display: flex; flex-direction: column;">
     <v-container>
       <div class="text-center">
-        <div class="text-h5 mb-n3" style="font-family: 'Pacifico', cursive; color: black;">
+        <div class="text-h4 mb-n3" style="font-family: 'Pacifico', cursive; color: black;">
           Hi! I am Prakanksha and this is all me.
         </div>
       </div>
+      <v-spacer></v-spacer>
+      <v-divider></v-divider>
 
       <v-row>
-        <v-col cols="4">
-          <v-card 
+        <v-col v-if="showAboutCard" cols="4">
+          <v-card transition="fade-transition"
             class="mb-3 d-flex flex-column justify-start rounded-lg"
             style="height: 300px; width: 100%; margin-top: 20px;"
             hover
@@ -22,8 +24,8 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
-          <v-card 
+        <v-col v-if="showImageCard" cols="4">
+          <v-card transition="fade-transition"
             max-width="100%"  
             square 
             class="mx-auto pa-2 pt-3 pb-4 d-flex rounded-lg"
@@ -39,8 +41,8 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
-          <v-card 
+        <v-col v-if="showEducationCard" cols="4">
+          <v-card transition="fade-transition"
             class="mb-3 d-flex flex-column justify-start rounded-lg"
             style="height: 300px; width: 100%; margin-top: 20px;"
             to="/edu" 
@@ -56,8 +58,8 @@
       </v-row>
 
       <v-row>
-        <v-col cols="4">
-          <v-card 
+        <v-col v-if="showExperienceCard" cols="4">
+          <v-card transition="fade-transition"
             class="mb-3 d-flex flex-column justify-start rounded-lg"
             style="height: 300px; width: 100%;" 
             to="/exp" 
@@ -68,8 +70,8 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
-          <v-card 
+        <v-col v-if="showSideActivitiesCard" cols="4">
+          <v-card transition="fade-transition"
             class="mb-3 d-flex flex-column justify-start rounded-lg"
             style="height: 300px; width: 100%;"
           >
@@ -78,8 +80,8 @@
           </v-card>
         </v-col>
 
-        <v-col cols="4">
-          <v-card 
+        <v-col v-if="showProjectsCard" cols="4">
+          <v-card transition="fade-transition"
             class="mb-3 d-flex flex-column justify-start rounded-lg"
             style="height: 300px; width: 100%;"
           >
@@ -111,12 +113,26 @@ export default {
   data() {
     return {
       screenshot: screenshotImage,
+      showAboutCard: false,
+      showImageCard: false,
+      showEducationCard: false,
+      showExperienceCard: false,
+      showSideActivitiesCard: false,
+      showProjectsCard: false
     };
   },
   methods: {
     openLink(url) {
       window.open(url, '_blank');
     }
+  },
+  mounted() {
+    setTimeout(() => { this.showAboutCard = true; }, 1000);
+    setTimeout(() => { this.showImageCard = true; }, 2000);
+    setTimeout(() => { this.showEducationCard = true; }, 3000);
+    setTimeout(() => { this.showExperienceCard = true; }, 4000);
+    setTimeout(() => { this.showSideActivitiesCard = true; }, 5000);
+    setTimeout(() => { this.showProjectsCard = true; }, 6000);
   }
 };
 </script>
