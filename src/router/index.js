@@ -3,13 +3,16 @@ import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-
     {
       path: '/',
       name: 'home',
       component: () => import('../views/Home.vue')
     },
-
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/Pbout.vue') 
+    },
     {
       path: '/folder',
       name: 'folder',
@@ -19,14 +22,13 @@ const router = createRouter({
       path: '/starred',
       name: 'starred',
       component: () => import('../views/Folder.vue'),
-      props: { starred:true }
+      props: { starred: true }
     },
     {
       path: '/rescent',
       name: 'rescent',
       component: () => import('../views/Folder.vue')
     },
-
     {
       path: '/books',
       name: 'books',
@@ -47,13 +49,11 @@ const router = createRouter({
       name: 'fy',
       component: () => import('../views/Fy.vue')
     },
-
     {
       path: '/sources',
       name: 'sources',
       component: () => import('../views/Sources.vue')
     },
-
     {
       path: '/settings/books',
       name: 'settings-books',
@@ -79,7 +79,6 @@ const router = createRouter({
       name: 'settings-folders',
       component: () => import('../views/settings/Folders.vue')
     },
-
   ]
 })
 

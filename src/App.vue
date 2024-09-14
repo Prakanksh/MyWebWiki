@@ -10,8 +10,9 @@
       <v-row>
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex flex-column justify-start"
-            style="height: 300px; width: 100%; margin-top: 20px;"
+            class="mb-3 d-flex flex-column justify-start rounded-lg"
+            style="height: 300px; width: 100%; margin-top: 20px; cursor: pointer;"
+            @click="goToAboutPage"
           >
             <v-card-title>About Me</v-card-title>
             <v-card-text>This is some random text inside a box.</v-card-text>
@@ -22,8 +23,8 @@
           <v-card 
             max-width="100%"  
             square 
-            class="mx-auto pa-2 pt-3 pb-4 d-flex"
-            style="height: 300px; position: relative; margin-top: 20px;"
+            class="mx-auto pa-2 pt-3 pb-4 d-flex rounded-lg"
+            style="height: 300px; position: relative; margin-top: 20px; cursor: pointer;"
           >
             <v-img
               :src="screenshot"
@@ -37,8 +38,9 @@
 
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex flex-column justify-start"
-            style="height: 300px; width: 100%; margin-top: 20px;"
+            class="mb-3 d-flex flex-column justify-start rounded-lg"
+            style="height: 300px; width: 100%; margin-top: 20px; cursor: pointer;"
+            @click="goToAboutPage"
           >
             <v-card-title>My Education</v-card-title>
             <v-card-text>This is the fourth random text box.</v-card-text>
@@ -49,8 +51,9 @@
       <v-row>
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex flex-column justify-start"
-            style="height: 300px; width: 100%;"
+            class="mb-3 d-flex flex-column justify-start rounded-lg"
+            style="height: 300px; width: 100%; cursor: pointer;"
+            @click="goToAboutPage"
           >
             <v-card-title>My Experience</v-card-title>
             <v-card-text>Here is another box with random text.</v-card-text>
@@ -59,8 +62,9 @@
 
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex flex-column justify-start"
-            style="height: 300px; width: 100%;"
+            class="mb-3 d-flex flex-column justify-start rounded-lg"
+            style="height: 300px; width: 100%; cursor: pointer;"
+            @click="goToAboutPage"
           >
             <v-card-title>Side Activities</v-card-title>
             <v-card-text>This box is placed below the image.</v-card-text>
@@ -69,8 +73,9 @@
 
         <v-col cols="4">
           <v-card 
-            class="mb-3 d-flex flex-column justify-start"
-            style="height: 300px; width: 100%;"
+            class="mb-3 d-flex flex-column justify-start rounded-lg"
+            style="height: 300px; width: 100%; cursor: pointer;"
+            @click="goToAboutPage"
           >
             <v-card-title>Projects</v-card-title>
             <v-card-text>Another box with some random text.</v-card-text>
@@ -105,6 +110,9 @@ export default {
   methods: {
     openLink(url) {
       window.open(url, '_blank');
+    },
+    goToAboutPage() {
+      this.$router.push({ name: 'about' }); 
     }
   }
 };
