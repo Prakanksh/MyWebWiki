@@ -12,9 +12,13 @@
           <v-card 
             class="mb-3 d-flex flex-column justify-start rounded-lg"
             style="height: 300px; width: 100%; margin-top: 20px;"
+            hover
+            to="/about" 
           >
             <v-card-title>About Me</v-card-title>
-            <v-card-text>Hello! I'm a passionate software engineer with a deep love for technology, particularly JavaScript and its various frameworks. My professional journey has led me to specialize in building solutions that combine logic and creativity. I find great joy in problem-solving, whether it's debugging complex code or tackling puzzles that stretch my thinking.</v-card-text>
+            <v-card-text>
+              Hello! I'm a passionate software engineer with a deep love for technology, particularly JavaScript and its various frameworks. My professional journey has led me to specialize in building solutions that combine logic and creativity. I find great joy in problem-solving, whether it's debugging complex code or tackling puzzles that stretch my thinking.
+            </v-card-text>
           </v-card>
         </v-col>
 
@@ -41,7 +45,11 @@
             style="height: 300px; width: 100%; margin-top: 20px;"
           >
             <v-card-title>My Education</v-card-title>
-            <v-card-text>This is the fourth random text box.</v-card-text>
+            <v-card-text>B.Tech in Electronics Instrumentation and Control from GEC, Rajasthan Technical University (2017-2021), 71%.
+              12th Grade from Sumit Bal Vidhyalay, Kota (RBSE, 2017), 73.4% in PCM.
+              10th Grade from M.B. International School, Kota (CBSE, 2014), 10 CGPA.
+              NCC C-Certificate (2018-2021), Alpha grade.
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
