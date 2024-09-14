@@ -1,5 +1,15 @@
 <template>
   <v-app style="background-color: #FCE4EC; min-height: 100vh; display: flex; flex-direction: column;">
+    <v-btn
+      class="elevation-5 position-fixed ml-10"
+      style="top: 50%; transform: translateY(-50%);"
+      color="white"
+      rounded="circle"
+      icon="mdi-chevron-left"
+      @click="goToHome"
+    >
+    </v-btn>
+
     <v-container>
       <div class="text-center">
         <div class="text-h5 mb-n3" style="font-family: 'Pacifico', cursive; color: black;">
@@ -48,6 +58,9 @@ export default {
   methods: {
     openLink(url) {
       window.open(url, '_blank');
+    },
+    goToHome() {
+      this.$router.push('/');
     }
   }
 };
