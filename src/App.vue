@@ -15,7 +15,7 @@
             @click="goToAboutPage"
           >
             <v-card-title>About Me</v-card-title>
-            <v-card-text>This is some random text inside a box.</v-card-text>
+            <v-card-text>Hello! I'm a passionate software engineer with a deep love for technology, particularly JavaScript and its various frameworks. My professional journey has led me to specialize in building solutions that combine logic and creativity. I find great joy in problem-solving, whether it's debugging complex code or tackling puzzles that stretch my thinking.</v-card-text>
           </v-card>
         </v-col>
 
