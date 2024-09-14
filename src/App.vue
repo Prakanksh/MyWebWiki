@@ -43,6 +43,7 @@
           <v-card 
             class="mb-3 d-flex flex-column justify-start rounded-lg"
             style="height: 300px; width: 100%; margin-top: 20px;"
+            to="/edu" 
           >
             <v-card-title>My Education</v-card-title>
             <v-card-text>B.Tech in Electronics Instrumentation and Control from GEC, Rajasthan Technical University (2017-2021), 71%.
