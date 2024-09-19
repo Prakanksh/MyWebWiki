@@ -30,11 +30,23 @@
           <v-divider class="my-4"></v-divider>
           <p>On a slightly more personal note, I’ve got a few quirky facts to share. I’ve completed NCC training, so yes, I can march in perfect sync! I’m also a proud pure vegetarian—because plants deserve all the love. Speaking of love, I have a soft spot for pink roses and cats (in that order, but don’t tell the cats). When I’m not coding or solving puzzles, you might find me attempting to read a Hindi book or singing… but only if you’re brave enough to listen! I also have an unshakable love for the mountains—they’re my happy place. Oh, and did I mention this is my first time on Earth? Still figuring things out, but loving every moment of it.</p>
           <v-divider class="my-4"></v-divider>
+
+          <div class="text-center">
+            <v-chip 
+              class="ma-2"
+              color="pink lighten-4"
+              rounded="pill"
+              @click="openLink('https://forms.gle/LW1AQEKaoJyLkRt56')"
+            >
+              <div style="color: black;">Take a quiz if you know me</div>
+            </v-chip>
+          </div>
+
         </v-card-text>
       </v-card>
 
     </v-container>
-    
+
     <v-spacer></v-spacer>
     <v-divider></v-divider>
     <v-container class="d-flex align-center justify-center" style="padding-bottom: 20px;">
@@ -51,10 +63,6 @@
 
 <script>
 export default {
-  mounted (){
-    console.log("here3333");
-  },
-  
   methods: {
     openLink(url) {
       window.open(url, '_blank');
