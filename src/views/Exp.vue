@@ -18,8 +18,6 @@
         <div class="text-center pt-3">
         <v-divider></v-divider>
       </div>
-  
-        <!-- Updated v-card with new experience paragraphs -->
         <v-card class="pa-4 mt-10 mb-5">
           <v-card-text>
             <p><strong>Frontend Engineer – Bangalore-based Startup (May 2024 - August 2024)</strong></p>
