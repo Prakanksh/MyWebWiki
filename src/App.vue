@@ -86,7 +86,7 @@
     <!-- Render routed pages here -->
     <router-view></router-view>
 
-    <Footer />
+    <Footer/>
   </v-app>
 </template>
 
